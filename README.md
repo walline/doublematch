@@ -1,4 +1,4 @@
-# Intro
+## Intro
 
 This is the official repository for DoubleMatch.
 
@@ -9,8 +9,6 @@ Kihyuk Sohn, David Berthelot, Chun-Liang Li, Zizhao Zhang, Nicholas Carlini, Eki
 
 
 ## Setup
-
-**Important**: `ML_DATA` is a shell environment variable that should point to the location where the datasets are installed. See the *Install datasets* section for more details.
 
 ### Install dependencies
 
@@ -54,14 +52,14 @@ CUDA_VISIBLE_DEVICES= scripts/create_split.py --seed=1 --size=5000 $ML_DATA/SSL2
 ```
 
 
-### Reproducing results in paper
+## Reproducing results in paper
 
 
 ```bash
 
 DOUBLEMATCH_PATH="path to the DoubleMatch code"
 
-export ML_DATA="path to where you want the datasets saved"
+export ML_DATA="path to where the datasets are saved"
 export PYTHONPATH=$PYTHONPATH:$DOUBLEMATCH_PATH
 
 TRAIN_KIMG=22000
