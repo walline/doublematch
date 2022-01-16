@@ -2,10 +2,7 @@
 
 This is the official repository for DoubleMatch.
 
-The code is build on the FixMatch repo. For more details on how to use this code we refer to their instructions.
-
-Code for the paper: "[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence](https://arxiv.org/abs/2001.07685)" by 
-Kihyuk Sohn, David Berthelot, Chun-Liang Li, Zizhao Zhang, Nicholas Carlini, Ekin D. Cubuk, Alex Kurakin, Han Zhang, and Colin Raffel.
+The code is built on the [FixMatch](https://github.com/google-research/fixmatch) repo. For more details on how to use this code we refer to their instructions.
 
 
 ## Setup
@@ -14,7 +11,7 @@ Kihyuk Sohn, David Berthelot, Chun-Liang Li, Zizhao Zhang, Nicholas Carlini, Eki
 
 ```bash
 sudo apt install python3 python3-dev python3-tk imagemagick python3-pip
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### Install datasets
