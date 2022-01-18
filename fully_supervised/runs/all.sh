@@ -15,18 +15,18 @@
 # limitations under the License.
 
 # Fully supervised baseline without mixup (not shown in paper since Mixup is better)
-python fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=cifar10-1 --wd=0.02 --smoothing=0.001
-python fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=cifar100-1 --wd=0.02 --smoothing=0.001
-python fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=svhn-1 --wd=0.002 --smoothing=0.01
-python fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=svhn_noextra-1 --wd=0.002 --smoothing=0.01
+python3 fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=cifar10-1 --wd=0.02 --smoothing=0.001
+python3 fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=cifar100-1 --wd=0.02 --smoothing=0.001
+python3 fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=svhn-1 --wd=0.002 --smoothing=0.01
+python3 fully_supervised/fs_baseline.py --train_dir experiments/fs --dataset=svhn_noextra-1 --wd=0.002 --smoothing=0.01
 
 # Fully supervised Mixup baselines (in paper)
 # Uses default parameters: --wd=0.002 --beta=0.5
-python fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar10-1
-python fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=svhn-1
-python fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=svhn_noextra-1
+python3 fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar10-1
+python3 fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=svhn-1
+python3 fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=svhn_noextra-1
 
 # Fully supervised Mixup baselines on 26M parameter large network (in paper)
 # Uses default parameters: --wd=0.002 --beta=0.5
-python fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar10-1 --filters=135
-python fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar100-1 --filters=135
+python3 fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar10-1 --filters=135
+python3 fully_supervised/fs_mixup.py --train_dir experiments/fs --dataset=cifar100-1 --filters=135
