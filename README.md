@@ -4,6 +4,7 @@ This is the official repository for DoubleMatch.
 
 The code is built on the [FixMatch](https://github.com/google-research/fixmatch) repo. For more details on how to use this code we refer to their instructions.
 
+![DoubleMatch diagram](/media/doublematch.jpg)
 
 ## Setup
 
